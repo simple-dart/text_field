@@ -1,6 +1,6 @@
 name: simple_dart_text_field
 description: Text Field Component
-version: 0.0.1
+version: 0.0.3
 repository: https://github.com/simple-dart/text_field
 platforms:
   web:

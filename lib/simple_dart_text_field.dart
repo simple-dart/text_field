@@ -9,12 +9,9 @@ class TextField extends Component with ValueChangeEventSource<String>, MixinDisa
   Element get element => textInput;
 
   TextField({bool password = false}) : super('TextField') {
-    hAlign = Align.center;
-    textAlign = Align.center;
     if (password) {
       textInput = PasswordInputElement();
     }
-    element.children.add(textInput);
     textInput.onInput.listen((event) {
       fireValueChange(value, value);
     });
